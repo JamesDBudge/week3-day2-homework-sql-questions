@@ -36,7 +36,7 @@ Class methods are required when you want an action to take effect over the whole
 
 Q8. What type of data structure is returned by calls to `db.exec_prepared()`? In the `save` method, how do we access the id from the returned data structure?
 
-returns a Property object and we can access its id using @id
+returns an array of hashes and is accessed by finding the id in the first index
 
 Q9. Why do we use prepared statements when performing database operations?
 
@@ -48,7 +48,7 @@ Look at the `find_by_id` and `find_by_address` methods in the `Property` class.
 
 Q10. What do they take in as their arguments?
 
-id and address, strings
+id, integers and address, strings
 
 Q11. What are their return values?
 
